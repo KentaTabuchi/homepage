@@ -1,5 +1,5 @@
 <?
-echo "<p>webhook start</p>";
+echo "<p>webhook homepage start</p>";
 exec('cd /home/misskabu/www/homepage/',$op);
 print_r($op); 
 exec('git pull');
