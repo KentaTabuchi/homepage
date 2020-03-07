@@ -4,6 +4,6 @@
 //---------------------------------------------------------------------
 function loadFooter(){
   $(function(){
-    $("footer").load("footer.html #footer");
+    $("footer").load("/homepage/html/footer.html #footer");
   });
 }

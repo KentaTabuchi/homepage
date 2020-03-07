@@ -1,3 +1,9 @@
+.region-contents-inner
+{
+  width:100%;
+  min-height:600px;
+}
+
 .region-footer
 {
   width:100%;
