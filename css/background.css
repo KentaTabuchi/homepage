@@ -1,3 +1,17 @@
+/*Body大外用背景*/
+.bg-body{
+  background-color: #434343;
+}
+
+/*コンテンツ本文用背景*/
+.bg-contents-ounter{
+  background-color:lightgray;
+}
+/*コンテンツ本文用背景*/
+.bg-contents-inner{
+  background-color: white;
+}
+
 /*フッター用背景*/
 .bg-footer{
   background-color: #434343;
