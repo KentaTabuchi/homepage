@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="/homepage/js/common.js"></script>
+  <link rel="stylesheet" href="/homepage/css/styles.css">
+  <title>Struts2_Error</title>
+</head>
+
+<body class="bg-body">
+  <div class="bg-contents-ounter px-50 py-50">
+    <h1>Struts2エラー集</h1>
+    <div class="bg-contents-inner region-contents-inner">
+      <dl>
+        <dt>
+          org.apache.jasper.JasperException
+        </dt>
+        <dd>
+          tag 'select', field 'list': The requested list key 'selectList' 
+          could not be resolved as a collection/array/map/enumeration/iterator type. Example: people or 
+          people.{name} - [unknown location]
+        </dd>
+        <dd>
+          s:selectタグのlistに指定したList型のデータが読めない。<br>
+          ・クラス名か変数名が間違っている。<br>
+          ・getterがない。formクラスなどを経由している場合、呼び出し階層の全てにgetterが通っているか確認する。
+        </dd>
+      </dl>
+    </div>
+  </div>
+  <footer>
+    <script>loadFooter()</script>
+  </footer>
+</body>
+</html>

@@ -8,11 +8,20 @@
   <link rel="stylesheet" href="../../css/styles.css">
   <title>HTML_index</title>
 </head>
+<?php
+  $result = glob('./contents/*.html');
+?>
 <body class="bg-body">
   <div class="bg-contents-ounter px-50 py-50">
+    <h1>HTML目次</h1>
     <div class="bg-contents-inner region-contents-inner">
       <ol>
-        <li><a href="contents/VSCodeでHTMLの雛形を作る.html">VSCodeでHTMLの雛形を作る</a></li>
+        <?php
+          foreach($result as $filename) {
+            $title = basename($filename,'.html');
+            echo("<li><a href='$filename'>$title</a></li>");
+          }
+        ?>
       </ol>
     </div>
   </div>
